@@ -10,7 +10,7 @@ LiquidCrystal_I2C lcd(0x27, 20, 4); // set the LCD address to 0x27 for a 16 char
 
 //SSID and Password of your WiFi router
 const char* ssid = "RedmiNote";
-const char* password = "rana6963";
+const char* password = "kimsa";
 String setcolor = "#000000"; //Set color for HTML
 String Color;
 ESP8266WebServer server(80);
@@ -65,7 +65,7 @@ void setup()
   lcd.init();
   lcd.backlight();
   lcd.setCursor(0, 0);
-  lcd.print("Shayan");
+  lcd.print("Hello world!");
   delay(1000);
 
   Serial.begin(9600);
